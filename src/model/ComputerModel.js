@@ -5,7 +5,7 @@ class ComputerModel {
     this.#computerNumber = null;
   }
 
-  static setComputerNumber(newComputerNumber) {
+  setComputerNumber(newComputerNumber) {
     this.#computerNumber = newComputerNumber;
   }
 }
