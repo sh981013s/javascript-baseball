@@ -8,6 +8,14 @@ class UserController {
     this.#mainController = mainController;
     this.#userModel = new UserModel();
   }
+
+  getIsFirstGame() {
+    return this.#userModel.getIsFirstGame();
+  }
+
+  setIsFirstGameFalse() {
+    this.#userModel.setIsFirstGameFalse();
+  }
 }
 
 module.exports = UserController;
