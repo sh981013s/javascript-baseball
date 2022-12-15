@@ -8,10 +8,6 @@ class ComputerModel {
     this.#computerNumber = null;
   }
 
-  setComputerNumber(newComputerNumber) {
-    this.#computerNumber = newComputerNumber;
-  }
-
   getGeneratedSingleNumber() {
     const singleNumber = Random.pickNumberInRange(
       GENERAL_CONSTANTS.START_NUMBER,
@@ -30,6 +26,10 @@ class ComputerModel {
       }
     }
     return generatedNumber;
+  }
+
+  setComputerNumber() {
+    this.#computerNumber = this.generateComputerNumber();
   }
 }
 
