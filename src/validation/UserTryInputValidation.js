@@ -24,3 +24,5 @@ const UserTryInputValidation = {
     }
   },
 };
+
+module.exports = UserTryInputValidation;
