@@ -6,7 +6,7 @@ class ComputerController {
 
   constructor(mainController) {
     this.#mainController = mainController;
-    this.#computerModel = ComputerModel;
+    this.#computerModel = new ComputerModel();
   }
 }
 

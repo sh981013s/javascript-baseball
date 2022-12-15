@@ -6,8 +6,8 @@ class MainController {
   #computerController;
 
   constructor() {
-    this.#userController = UserController;
-    this.#computerController = ComputerController;
+    this.#userController = new UserController(this);
+    this.#computerController = new ComputerController(this);
   }
 }
 

@@ -6,7 +6,7 @@ class UserController {
 
   constructor(mainController) {
     this.#mainController = mainController;
-    this.#userModel = UserModel;
+    this.#userModel = new UserModel();
   }
 }
 
