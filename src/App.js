@@ -1,5 +1,10 @@
+const MainController = require("./controller/MainController");
+
 class App {
-  play() {}
+  play() {
+    const mainController = new MainController();
+    mainController.firstInitialize();
+  }
 }
 
 module.exports = App;
