@@ -17,7 +17,7 @@ class ComputerModel {
     return singleNumber;
   }
 
-  generateComputerNumber() {
+  getGeneratedComputerNumber() {
     const generatedNumber = [];
     while (new Set(generatedNumber).size !== 3) {
       const singleNumber = this.getGeneratedSingleNumber();
@@ -29,7 +29,7 @@ class ComputerModel {
   }
 
   setComputerNumber() {
-    this.#computerNumber = this.generateComputerNumber();
+    this.#computerNumber = this.getGeneratedComputerNumber();
   }
 }
 

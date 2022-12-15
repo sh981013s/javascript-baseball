@@ -5,7 +5,7 @@ class UserModel {
     this.#isFirstGame = true;
   }
 
-  getIsFirstGame() {
+  isFirstGame() {
     return this.#isFirstGame;
   }
 

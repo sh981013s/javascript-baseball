@@ -9,8 +9,8 @@ class UserController {
     this.#userModel = new UserModel();
   }
 
-  getIsFirstGame() {
-    return this.#userModel.getIsFirstGame();
+  isFirstGame() {
+    return this.#userModel.isFirstGame();
   }
 
   setIsFirstGameFalse() {
