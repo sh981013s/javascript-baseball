@@ -1,8 +1,16 @@
 class UserModel {
-  #tryCount;
+  #isFirstGame;
 
   constructor() {
-    this.#tryCount = 0;
+    this.#isFirstGame = true;
+  }
+
+  getIsFirstGame() {
+    return this.#isFirstGame;
+  }
+
+  setIsFirstGameFalse() {
+    this.#isFirstGame = false;
   }
 }
 
