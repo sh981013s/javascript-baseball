@@ -12,6 +12,10 @@ class MainController {
     this.#computerController = new ComputerController(this);
   }
 
+  printError(errorLog) {
+    OutputView.printErrorMessage(errorLog);
+  }
+
   firstInitialize() {
     if (this.#userController.isFirstGame()) {
       OutputView.printWelcomeMessage();

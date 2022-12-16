@@ -5,6 +5,10 @@ const OutputView = {
   printWelcomeMessage() {
     Console.print(USER_TRY_MESSAGES.OPENING);
   },
+
+  printErrorMessage(errorLog) {
+    Console.print(errorLog);
+  },
 };
 
 module.exports = OutputView;
