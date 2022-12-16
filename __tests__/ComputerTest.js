@@ -1,10 +1,9 @@
-const ComputerModel = require("../src/model/ComputerModel");
+const ComputerNumberGenerator = require("../src/utils/ComputerNumberGenerator");
 
 describe("컴퓨터 숫자 관련 테스트", () => {
-  const computerModel = new ComputerModel();
-
   test("숫자 생성 테스트", () => {
-    const generatedNumber = computerModel.getGeneratedComputerNumber();
+    const generatedNumber = new ComputerNumberGenerator()
+      .getGeneratedComputerNumber;
     expect(new Set(generatedNumber).size).toEqual(3);
     generatedNumber.forEach((singleElement) => {
       expect(typeof singleElement).toEqual("number");

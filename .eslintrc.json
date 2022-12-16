@@ -1,6 +1,6 @@
 {
   "parserOptions": {
-    "ecmaVersion": 13
+    "ecmaVersion": "latest"
   },
   "env": {
     "es2022": true,
@@ -135,15 +135,6 @@
         "allowForLoopAfterthoughts": true
       }
     ],
-    "operator-linebreak": [
-      "error",
-      "before",
-      {
-        "overrides": {
-          "=": "none"
-        }
-      }
-    ],
     "eqeqeq": [
       "error",
       "always",
@@ -156,10 +147,6 @@
     "no-unneeded-ternary": "error",
     "no-mixed-operators": [
       "error"
-    ],
-    "nonblock-statement-body-position": [
-      "error",
-      "beside"
     ],
     "brace-style": [
       "error",
@@ -367,6 +354,12 @@
       "error",
       2
     ],
-    "max-lines-per-function": ["error", 10]
+    "max-lines-per-function": ["error", 10],
+    "nonblock-statement-body-position": [
+      "error",
+      "beside",
+      { "overrides": { "while": "below", "for": "below", "if": "below" } }
+    ],
+    "operator-linebreak": "off"
   }
 }
